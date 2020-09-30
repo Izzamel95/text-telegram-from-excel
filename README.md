@@ -1,5 +1,5 @@
 # Text to Telegram from Excel
-NUS FinTech SG PC 3 - Day 3 Assignment
+NUS FinTech SG PC 3 - Day 3 HW Assignment 
 
 - Step 1: Download attached Excel sheet
 - Step 2: Open VBA on Excel sheet via "Developer" >> "Visual Basic Editor"
