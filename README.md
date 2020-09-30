@@ -6,8 +6,10 @@ NUS FinTech SG PC 3 - Day 3 Assignment
 - Step 3: Edit and test code with the following credentials (Chat ID: 259340144; API Key: 1335220127:AAEPsNk6nSyJoIDNiXqqaVNiqXh0Ljefa48)
 - Step 4: Test Code for VBA is also committed in repository and you may commit and push edits with it as well.
 - Step 5: Save VBA code
-- Step 6: Go back to main Excel page, run Telegram Send icon
-- Step 7: Isabel reviews message on Whosyourdaddy Telegram Bot: https://t.me/Whoyourdaddy_bot
+- Step 6: Go back to main Excel page, key any messages and click Telegram Send icon
+- Step 7: Isabel receives message on Whosyourdaddy Telegram Bot: https://t.me/Whoyourdaddy_bot
+
+Additional tip: Change Chat ID to a different bot user to send messages to different people anonymously from Excel
 
 # What the Excel Sheet Does
 A Simple Excel Application Written with VBA Code that helps you send a text to Telegram Via a Telebot
