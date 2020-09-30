@@ -1,0 +1,41 @@
+Sub Send_text_to_telegram()
+'
+' Send_to_telegram Macro
+' Link to code in the description down below
+' chill man
+
+ 
+Dim strChatId As String
+Dim strMessage As String
+Dim strPostData As String
+Dim strResponse As String
+
+
+ p = Range("F1").Value
+ q = Range("G1").Value & vbNewLine
+ R = Range("F2").Value
+ s = Range("G2").Value & vbNewLine
+
+ 
+ 
+ 
+
+ Values = Join(Array(p, q, R, s))
+ 
+'CHANGE YOUR CHATID [RED]
+ strChatId = 259340144
+ strMessage = Values
+ 
+strPostData = "chat_id=" & strChatId & "&text=" & strMessage
+ 
+ Set objRequest = CreateObject("MSXML2.XMLHTTP")
+With objRequest
+ 'CHANGE YOUR APIKEY [BLUE]https://api.telegram.org/bot1335220127:AAEPsNk6nSyJoIDNiXqqaVNiqXh0Ljefa48/sendMessage?
+  .Open "POST", "https://api.telegram.org/bot1335220127:AAEPsNk6nSyJoIDNiXqqaVNiqXh0Ljefa48/sendMessage?", False
+  .setRequestHeader "Content-Type", "application/x-www-form-urlencoded"
+  .send (strPostData)
+   GetSessionId = .responseText
+   MsgBox GetSessionId
+End With
+ 
+End Sub
